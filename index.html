@@ -14,7 +14,7 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #007bff;
+            background-color: #0AB5B7; /* Updated color */
             color: white;
             padding: 20px;
             text-align: center;
@@ -27,6 +27,30 @@
         }
         header nav a:hover {
             text-decoration: underline;
+        }
+        .banner {
+            background-image: url('/bannerKuburat.jpg'); /* Path to your banner image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 36px;
+            font-weight: bold;
+            position: relative;
+        }
+        .banner::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay to make text more readable */
+        }
+        .banner-text {
+            position: relative;
+            z-index: 1;
         }
         .main-content {
             padding: 40px;
@@ -54,6 +78,12 @@
     </style>
 </head>
 <body>
+
+<div class="banner">
+    <div class="banner-text">
+        <p>"Zorg is niet alleen wat we doen, het is wie we zijn." – Verpleegkundige</p>
+    </div>
+</div>
 
 <header>
     <h1>Kuburat Idinokhai - Zorg met zorg</h1>
@@ -89,3 +119,4 @@
 
 </body>
 </html>
+
