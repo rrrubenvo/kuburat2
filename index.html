@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kuburat Idinokhai - Zorg met zorg</title>
+    
+    <!-- Link to Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <style>
         /* General body styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
+            line-height: 1.6;
         }
 
         /* Modern Header */
@@ -20,7 +25,7 @@
             color: white;
             padding: 20px 40px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -31,7 +36,7 @@
         header h1 {
             margin: 0;
             font-size: 32px;
-            font-weight: bold;
+            font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
@@ -70,11 +75,11 @@
             background-position: center center;
             color: white;
             text-align: center;
-            padding: 100px 20px;
+            padding: 80px 20px;
             font-size: 36px;
-            font-weight: bold;
+            font-weight: 700;
             position: relative;
-            min-height: 400px;
+            min-height: 300px; /* Min height of 300px for the banner */
         }
 
         .banner::after {
@@ -90,12 +95,31 @@
         .banner-text {
             position: relative;
             z-index: 1;
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* Main content section */
         .main-content {
-            padding: 40px;
+            padding: 60px 40px;
             text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-content h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.8;
         }
 
         .cta-button {
@@ -106,10 +130,13 @@
             text-decoration: none;
             border-radius: 5px;
             margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .cta-button:hover {
             background-color: #218838;
+            transform: translateY(-2px);
         }
 
         /* Footer styles */
@@ -138,6 +165,22 @@
             header nav a {
                 margin: 10px 0;
                 display: inline-block;
+            }
+
+            .banner {
+                padding: 60px 20px;
+            }
+
+            .banner-text {
+                font-size: 1.2rem;
+            }
+
+            .main-content {
+                padding: 40px 20px;
+            }
+
+            .cta-button {
+                padding: 12px 24px;
             }
         }
     </style>
@@ -190,5 +233,6 @@
 
 </body>
 </html>
+
 
 
