@@ -1,0 +1,102 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #0AB5B7;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header nav a:hover {
+    background-color: #028E92;
+    transform: scale(1.05);
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('bannerKuburat.jpg');
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    min-height: 300px;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .banner {
+        padding: 60px 20px;
+    }
+
+    .banner-text {
+        font-size: 1.2rem;
+    }
+}
