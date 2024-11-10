@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kuburat Idinokhai - Zorg met zorg</title>
-    
+
     <!-- Link to Google Fonts for modern typography -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -23,48 +23,51 @@
         header {
             background-color: #0AB5B7; /* Main brand color */
             color: white;
-            padding: 20px 40px;
-            text-align: center;
+            padding: 10px 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
             position: sticky;
             top: 0;
             z-index: 1000;
-            transition: background-color 0.3s ease;
         }
 
         /* Logo and main title */
-        header h1 {
-            margin: 0;
-            font-size: 32px;
+        .header-title {
+            font-size: 1.5em;
             font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
+            margin: 0;
+            flex: 1;
+            text-align: left;
         }
 
         /* Navigation styles */
-        header nav {
-            margin-top: 20px;
+        nav {
+            display: flex;
+            gap: 15px;
         }
 
-        header nav a {
+        nav a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
+            font-size: 1em;
             letter-spacing: 1px;
             text-transform: uppercase;
-            padding: 10px 15px;
+            padding: 5px 10px;
             border-radius: 5px;
-            display: inline-block;
             transition: background-color 0.3s, transform 0.3s;
         }
 
-        header nav a:hover {
+        nav a:hover {
             background-color: #028E92; /* Slightly darker shade for hover */
             transform: scale(1.05); /* Slight zoom effect */
         }
 
-        header nav a.active {
+        nav a.active {
             background-color: #006F72; /* Active link color */
         }
 
@@ -151,21 +154,13 @@
 
         /* Mobile responsiveness */
         @media (max-width: 768px) {
-            header {
-                padding: 20px 15px;
+            .header-title {
+                font-size: 1.2em;
             }
 
-            header h1 {
-                font-size: 28px;
-            }
-
-            header nav {
-                text-align: center;
-            }
-
-            header nav a {
-                margin: 10px 0;
-                display: inline-block;
+            nav a {
+                font-size: 0.9em;
+                padding: 5px 8px;
             }
 
             .banner {
@@ -184,13 +179,28 @@
                 padding: 12px 24px;
             }
         }
+
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 1em;
+            }
+
+            nav a {
+                font-size: 0.85em;
+                padding: 4px 6px;
+            }
+
+            nav {
+                gap: 8px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <!-- Modern Header Section -->
 <header>
-    <h1>Kuburat Idinokhai - Zorg met zorg</h1>
+    <h1 class="header-title">Kuburat Idinokhai - Zorg met zorg</h1>
     <nav>
         <a href="#over-ons" class="active">Over ons</a>
         <a href="#contact">Contact</a>
