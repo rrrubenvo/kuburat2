@@ -29,16 +29,18 @@
             text-decoration: underline;
         }
         .banner {
-            background-image: url('bannerKuburat.jpg'); /* Relative path */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-            font-size: 36px;
-            font-weight: bold;
-            position: relative;
-        }
+    background-image: url('bannerKuburat.jpg'); /* Relative path to the image */
+    background-size: cover; /* Ensures the image covers the full area */
+    background-position: center center; /* Keeps the image centered */
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* Increased padding to give more space around the text */
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    min-height: 400px; /* Minimum height for the banner */
+}
+
         .banner::after {
             content: "";
             position: absolute;
