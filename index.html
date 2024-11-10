@@ -70,9 +70,10 @@
 
         /* Banner Section */
         .banner {
-            background-image: url('bannerKuburat.jpg'); /* Relative path */
+            background-image: url('bannerKuburat.jpg'); /* Ensure path is correct */
             background-size: cover;
-            background-position: center bottom; /* Adjusted to cut from the bottom */
+            background-position: center top; /* Anchor image to the top */
+            background-attachment: fixed; /* Keeps image position stable on scroll */
             color: white;
             text-align: center;
             padding: 80px 20px;
