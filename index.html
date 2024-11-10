@@ -8,10 +8,17 @@
 </head>
 <body>
 
-<!-- Header placeholder -->
-<div id="header-placeholder"></div>
+<!-- Header Section -->
+<header>
+    <h1>Kuburat Idinokhai</h1>
+    <nav>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+        <a href="#direct-boeken">Direct Boeken</a>
+    </nav>
+</header>
 
-<!-- Banner Section with Image -->
+<!-- Banner Section -->
 <div class="banner">
     <img src="bannerKuburat.jpg" alt="Zorg met zorg">
     <div class="banner-text">
@@ -22,7 +29,7 @@
 <!-- Main content section -->
 <div class="main-content" id="over-ons">
     <h2>Over ons</h2>
-    <p>Wij bij Kuburat Idinokhai bieden professionele zorgdiensten op maat voor uw gezondheid en welzijn. Ons team van zorgverleners is er om u te ondersteunen bij alles wat met uw gezondheid te maken heeft.</p>
+    <p>Bij Kuburat Idinokhai bieden we professionele zorgdiensten op maat voor uw gezondheid en welzijn. Ons team van zorgverleners is er om u te ondersteunen bij alles wat met uw gezondheid te maken heeft.</p>
     <p>Wij zijn toegewijd aan het leveren van hoogwaardige zorg die voldoet aan de behoeften van onze klanten. Ons doel is om u te helpen een gezond en gelukkig leven te leiden.</p>
 </div>
 
@@ -41,25 +48,10 @@
     <a href="boeken.html" class="cta-button">Boek Nu</a>
 </div>
 
-<!-- Footer placeholder -->
-<div id="footer-placeholder"></div>
-
-<!-- JavaScript to load header and footer -->
-<script>
-    // Function to load external HTML files into elements
-    function loadHTML(elementID, filePath) {
-        fetch(filePath)
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById(elementID).innerHTML = data;
-            })
-            .catch(error => console.log("Error loading file:", error));
-    }
-
-    // Load header and footer
-    loadHTML("header-placeholder", "header.html");
-    loadHTML("footer-placeholder", "footer.html");
-</script>
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Kuburat Idinokhai | Alle rechten voorbehouden</p>
+</footer>
 
 </body>
 </html>
