@@ -69,20 +69,19 @@
         }
 
         /* Banner Section */
-        /* Banner Section */
-.banner {
-    background-image: url('bannerKuburat.jpg'); /* Relative path */
-    background-size: cover;
-    background-position: center bottom; /* Change this to align the image to the bottom */
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-    font-size: 36px;
-    font-weight: 700;
-    position: relative;
-    min-height: 400px; 
-}
-
+        .banner {
+            background-image: url('bannerKuburat.jpg'); /* Ensure path is correct */
+            background-size: cover;
+            background-position: center top; /* Anchor image to the top */
+            background-attachment: fixed; /* Keeps image position stable on scroll */
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            font-size: 36px;
+            font-weight: 700;
+            position: relative;
+            min-height: 300px; /* Min height of 300px for the banner */
+        }
 
         .banner::after {
             content: "";
@@ -235,6 +234,3 @@
 
 </body>
 </html>
-
-
-
