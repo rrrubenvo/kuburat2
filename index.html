@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kuburat Idinokhai - Zorg met zorg</title>
-
-    <!-- Link to Google Fonts for modern typography -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
     <style>
         /* General body styles */
         body {
@@ -19,56 +15,54 @@
             line-height: 1.6;
         }
 
-        /* Modern Header */
+        /* Header */
         header {
             background-color: #0AB5B7; /* Main brand color */
             color: white;
             padding: 10px 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
             position: sticky;
             top: 0;
             z-index: 1000;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
         }
 
-        /* Logo and main title */
-        .header-title {
+        header h1 {
+            margin: 0;
             font-size: 1.5em;
             font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
-            margin: 0;
-            flex: 1;
-            text-align: left;
+            white-space: nowrap; /* Prevents the title from breaking into multiple lines */
         }
 
-        /* Navigation styles */
-        nav {
+        header nav {
             display: flex;
-            gap: 15px;
+            gap: 15px; /* Space between nav links */
         }
 
-        nav a {
+        header nav a {
             color: white;
             text-decoration: none;
             font-size: 1em;
-            letter-spacing: 1px;
             text-transform: uppercase;
-            padding: 5px 10px;
+            padding: 8px 12px;
             border-radius: 5px;
             transition: background-color 0.3s, transform 0.3s;
+            white-space: nowrap; /* Prevents the links from breaking into multiple lines */
         }
 
-        nav a:hover {
-            background-color: #028E92; /* Slightly darker shade for hover */
-            transform: scale(1.05); /* Slight zoom effect */
+        header nav a:hover {
+            background-color: #028E92;
+            transform: scale(1.05);
         }
 
-        nav a.active {
-            background-color: #006F72; /* Active link color */
+        header nav a.active {
+            background-color: #006F72;
         }
 
         /* Banner Section */
@@ -152,15 +146,19 @@
             margin-top: 40px;
         }
 
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .header-title {
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            header {
+                padding: 10px 15px;
+            }
+
+            header h1 {
                 font-size: 1.2em;
             }
 
-            nav a {
+            header nav a {
                 font-size: 0.9em;
-                padding: 5px 8px;
+                padding: 6px 10px;
             }
 
             .banner {
@@ -179,28 +177,12 @@
                 padding: 12px 24px;
             }
         }
-
-        @media (max-width: 480px) {
-            .header-title {
-                font-size: 1em;
-            }
-
-            nav a {
-                font-size: 0.85em;
-                padding: 4px 6px;
-            }
-
-            nav {
-                gap: 8px;
-            }
-        }
     </style>
 </head>
 <body>
 
-<!-- Modern Header Section -->
 <header>
-    <h1 class="header-title">Kuburat Idinokhai - Zorg met zorg</h1>
+    <h1>Kuburat Idinokhai - Zorg met zorg</h1>
     <nav>
         <a href="#over-ons" class="active">Over ons</a>
         <a href="#contact">Contact</a>
