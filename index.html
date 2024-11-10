@@ -3,112 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kuburat Idinokhai - Zorg met zorg</title>
-
-    <!-- Link to Google Fonts for modern typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <style>
-        /* General body styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            line-height: 1.6;
-        }
-
-        /* Modern Header with Flexbox */
-        header {
-            background-color: #0AB5B7; /* Main brand color */
-            color: white;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            transition: background-color 0.3s ease;
-        }
-
-        /* Logo/title styling */
-        header h1 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin: 0;
-            flex: 1 1 auto; /* Allow title to grow */
-        }
-
-        /* Navigation styles */
-        header nav {
-            flex: 1 1 auto; /* Allow nav to grow */
-            text-align: right;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        header nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            font-size: 1rem;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            border-radius: 5px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        header nav a:hover {
-            background-color: #028E92;
-            transform: scale(1.05);
-        }
-
-        header nav a.active {
-            background-color: #006F72;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            header {
-                padding: 10px 20px;
-                flex-direction: column;
-                text-align: center;
-            }
-
-            header h1 {
-                font-size: 1.6rem;
-                margin-bottom: 10px;
-            }
-
-            header nav {
-                justify-content: center;
-            }
-
-            header nav a {
-                font-size: 0.9rem;
-                padding: 8px 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Header Section with Flexbox for Responsive Layout -->
-<header>
-    <h1>Kuburat Idinokhai - Zorg met zorg</h1>
-    <nav>
-        <a href="#over-ons" class="active">Over ons</a>
-        <a href="#contact">Contact</a>
-        <a href="#direct-boeken">Direct Boeken</a>
-    </nav>
-</header>
+<!-- Header placeholder -->
+<div id="header-placeholder"></div>
+
+<!-- Banner Section -->
+<div class="banner">
+    <div class="banner-text">
+        <p>"Zorg is niet alleen wat we doen, het is wie we zijn." – Verpleegkundige</p>
+    </div>
+</div>
+
+<!-- Main content section -->
+<div class="main-content" id="over-ons">
+    <h2>Over ons</h2>
+    <p>Wij bij Kuburat Idinokhai bieden professionele zorgdiensten op maat voor uw gezondheid en welzijn. Ons team van zorgverleners is er om u te ondersteunen bij alles wat met uw gezondheid te maken heeft.</p>
+    <p>Wij zijn toegewijd aan het leveren van hoogwaardige zorg die voldoet aan de behoeften van onze klanten. Ons doel is om u te helpen een gezond en gelukkig leven te leiden.</p>
+</div>
+
+<!-- Contact Section -->
+<div class="main-content" id="contact">
+    <h2>Contact</h2>
+    <p>Heeft u vragen of wilt u meer informatie? Neem gerust contact met ons op.</p>
+    <p>Email: info@kuburatidinokhai.nl</p>
+    <p>Telefoon: +31 123 456 789</p>
+</div>
+
+<!-- Book Now Section -->
+<div class="main-content" id="direct-boeken">
+    <h2>Direct Boeken</h2>
+    <p>Boek vandaag nog uw zorgdienst via ons eenvoudige online reserveringssysteem.</p>
+    <a href="boeken.html" class="cta-button">Boek Nu</a>
+</div>
+
+<!-- Footer placeholder -->
+<div id="footer-placeholder"></div>
+
+<!-- JavaScript to load header and footer -->
+<script>
+    // Function to load external HTML files into elements
+    function loadHTML(elementID, filePath) {
+        fetch(filePath)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(elementID).innerHTML = data;
+            })
+            .catch(error => console.log("Error loading file:", error));
+    }
+
+    // Load header and footer
+    loadHTML("header-placeholder", "header.html");
+    loadHTML("footer-placeholder", "footer.html");
+</script>
 
 </body>
 </html>
