@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kuburat Idinokhai - Zorg met zorg</title>
-    
-    <!-- Link to Google Fonts for modern typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
     <style>
         /* General body styles */
         body {
@@ -185,52 +174,3 @@
             }
         }
     </style>
-</head>
-<body>
-
-<!-- Modern Header Section -->
-<header>
-    <h1>Kuburat Idinokhai - Zorg met zorg</h1>
-    <nav>
-        <a href="#over-ons" class="active">Over ons</a>
-        <a href="#contact">Contact</a>
-        <a href="#direct-boeken">Direct Boeken</a>
-    </nav>
-</header>
-
-<!-- Banner Section -->
-<div class="banner">
-    <div class="banner-text">
-        <p>"Zorg is niet alleen wat we doen, het is wie we zijn." – Verpleegkundige</p>
-    </div>
-</div>
-
-<!-- About Section -->
-<div class="main-content" id="over-ons">
-    <h2>Over ons</h2>
-    <p>Wij bij Kuburat Idinokhai bieden professionele zorgdiensten op maat voor uw gezondheid en welzijn. Ons team van zorgverleners is er om u te ondersteunen bij alles wat met uw gezondheid te maken heeft.</p>
-    <p>Wij zijn toegewijd aan het leveren van hoogwaardige zorg die voldoet aan de behoeften van onze klanten. Ons doel is om u te helpen een gezond en gelukkig leven te leiden.</p>
-</div>
-
-<!-- Contact Section -->
-<div class="main-content" id="contact">
-    <h2>Contact</h2>
-    <p>Heeft u vragen of wilt u meer informatie? Neem gerust contact met ons op.</p>
-    <p>Email: info@kuburatidinokhai.nl</p>
-    <p>Telefoon: +31 123 456 789</p>
-</div>
-
-<!-- Book Now Section -->
-<div class="main-content" id="direct-boeken">
-    <h2>Direct Boeken</h2>
-    <p>Boek vandaag nog uw zorgdienst via ons eenvoudige online reserveringssysteem.</p>
-    <a href="boeking.html" class="cta-button">Boek Nu</a>
-</div>
-
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2024 Kuburat Idinokhai. Alle rechten voorbehouden.</p>
-</footer>
-
-</body>
-</html>
