@@ -8,11 +8,6 @@
             line-height: 1.6;
         }
 
-html, body {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
         /* Modern Header */
         header {
             background-color: #0AB5B7; /* Main brand color */
